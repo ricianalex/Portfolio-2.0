@@ -48,7 +48,7 @@
             Hey! I'm <span class="text--purple">Alex Rician</span>&nbsp;<span class="wave">👋</span>
           </h1>
           <p class="about-me__info--para">
-            I'm a <strong class="text--purple">frontend software developer</strong> with a strong passion for building
+            I'm a <strong class="text--purple">junior frontend software developer</strong> with a strong passion for building
             responsive and performant web
             applications with great user experiences that positively impacts the world.
           </p>
@@ -192,7 +192,7 @@
                   Html, CSS, JavaScript, React
                 </h4>
                 <p class="project__description--para--small">
-                  This Trivia Game uses the <strong class="text--purple">Open Trivia DB API</strong> to show a 5 question quiz. After you select a category and difficulty level you can test your knowledge. 
+                  This Trivia Game uses the <strong class="text--purple">Open Trivia DB API</strong> to display a 5 question quiz. After you select a category and difficulty level you can test your knowledge. 
                 </p>
                 <p class="project__description--para">
                   This fun Trivia Game uses the <strong class="text--purple">Open Trivia DB API</strong> to display a 5 question quiz. You can select the category and difficulty level and then test your knowledge. 
@@ -272,6 +272,28 @@
       <div class="footer__copyright">Copyright © 2022 Alex Rician</div>
     </div>
   </footer>
+  <button onclick="topFunction()" id="back_to_top" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+  <script>
+    // Get the button
+    let mybutton = document.getElementById("back_to_top");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
 </body>
 
 </html>

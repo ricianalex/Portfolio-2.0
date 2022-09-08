@@ -400,7 +400,7 @@ nav {
 
 @media (max-width: 768px) {
   .project__preview--title {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .project__preview--subtitle {
@@ -575,6 +575,23 @@ footer {
     left: 30px;
     padding-right: 30px;
   }
+
+  #back_to_top {
+    display: none;
+    position: fixed;
+    bottom: 3vh;
+    right: 3vh;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    background-color: var(--primaryColor);
+    border: none;
+    box-shadow: 5px 10px 16px 1px rgba(0,0,0,0.69);
+    z-index: 10;
+    color: white;
+    font-size: 3vh;
+  }
+
 }
 
 /* SMALL PHONES */
@@ -584,7 +601,7 @@ footer {
   }
 
   .contact {
-    margin-left: 50%;
+    margin-left: 10vh;
   }
 
   .project__wrapper {
@@ -604,11 +621,17 @@ footer {
   .project__description--para--small {
     display: block;
     margin: 10px 2px;
+    font-size: 15px;
   }
 
   .project__description--links {
     display: flex;
     justify-content: center;
+  }
+
+  .project__description--link {
+    font-size: 15px;
+    margin-right: 10px;
   }
 
   .project__description--title {
