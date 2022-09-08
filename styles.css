@@ -161,8 +161,8 @@ nav {
 }
 
 .about-me__picture--mask {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
@@ -183,11 +183,13 @@ nav {
 }
 
 .about-me__picture {
-  width: 100%;
+  width: 90%;
 
   /* Improving my own picture */
   transform: scale(1.5);
   padding-top: 8px;
+  margin-left: 2vh;
+  margin-top: 2vh;
 }
 
 .about-me__info--title {
@@ -549,6 +551,22 @@ footer {
   opacity: 1;
 }
 
+#back_to_top {
+  display: none;
+  position: fixed;
+  bottom: 3vh;
+  right: 3vh;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  background-color: var(--primaryColor);
+  border: none;
+  box-shadow: 5px 10px 16px 1px rgba(0,0,0,0.69);
+  z-index: 10;
+  color: white;
+  font-size: 3vh;
+}
+
 /* Small phones, tablets, large smartphones */
 @media (max-width: 768px) {
   nav {
@@ -563,6 +581,17 @@ footer {
     font-size: 18px;
   }
 
+  .about-me__picture--mask {
+    width: 100px;
+    height: 100px;
+  }
+
+  .about-me__picture {
+    width: 100%;
+    margin-top: 1vh;
+    margin-left: 1vh;
+  }
+
   .language {
     width: calc(100% / 3);
   }
@@ -574,22 +603,6 @@ footer {
   .project__description {
     left: 30px;
     padding-right: 30px;
-  }
-
-  #back_to_top {
-    display: none;
-    position: fixed;
-    bottom: 3vh;
-    right: 3vh;
-    width: 5vh;
-    height: 5vh;
-    border-radius: 50%;
-    background-color: var(--primaryColor);
-    border: none;
-    box-shadow: 5px 10px 16px 1px rgba(0,0,0,0.69);
-    z-index: 10;
-    color: white;
-    font-size: 3vh;
   }
 
 }
