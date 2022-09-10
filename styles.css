@@ -565,6 +565,7 @@ footer {
   z-index: 10;
   color: white;
   font-size: 3vh;
+  cursor: pointer;
 }
 
 /* Small phones, tablets, large smartphones */
