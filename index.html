@@ -213,7 +213,7 @@
                   <div>
                     <h3 class="project__preview--title">PicSome Webshop</h3>
                     <h4 class="project__preview--subtitle">
-                      JavaScript and advanced React JS concepts (still in development)
+                      JavaScript and advanced React JS (still in development)
                     </h4>
                   </div>
                   <div class="project__preview--icon">
@@ -224,7 +224,7 @@
               <div class="project__description">
                 <h3 class="project__description--title">PicSome Webshop</h3>
                 <h4 class="project__description--sub-title">
-                  JavaScript and advanced React JS concepts (still in development)
+                  JavaScript and advanced React (still in development)
                 </h4>
                 <p class="project__description--para--small">
                   PicSome Webshop is an <strong class="text--purple">eCommerce Website</strong> built using advanced React JS concepts such as React Router, Context API and custom React Hooks.
@@ -233,12 +233,13 @@
                   PicSome Webshop is an <strong class="text--purple">eCommerce Website</strong> built using advanced React JS concepts such as React Router, Context API and custom React Hooks. The site is in development and is built with the help of the Advanced React course on <a href="https://scrimba.com/learn/react" target="_blank" style="color:white;"><strong>Scrimba</strong></a>. 
                 </p>
                 <div class="project__description--links">
-                  <a href="#" class="project__description--link">
+                  <button class="project__description--link link-popup" style="border: none; cursor: pointer;" onmouseenter="showPopUp()" onmouseleave="hidePopUp()">
                     GitHub <i class="fab fa-github"></i>
-                  </a>
-                  <a href="#" class="project__description--link">
+                    <span class="popuptext" id="myPopup">App still under development</span>
+                  </button>
+                  <button class="project__description--link link-popup" style="border: none; cursor: pointer;" onmouseenter="showPopUp()" onmouseleave="hidePopUp()">
                     Live Demo <i class="fas fa-link"></i>
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -303,6 +304,16 @@
     function topFunction() {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
+    }
+
+    function showPopUp() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.add("show");
+    }
+
+    function hidePopUp() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.remove("show");
     }
     </script>
 </body>
